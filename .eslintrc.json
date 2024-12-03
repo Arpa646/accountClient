@@ -1,0 +1,7 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+   "@next/next/no-img-element": "off", // Disable the warning for <img> elements
+    "react/no-unescaped-entities": "off" // Disable the unescaped entities warning
+  }
+}

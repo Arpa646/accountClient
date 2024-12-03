@@ -1,0 +1,35 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.custom {
+  background-image: url("./logo.png"), url("./logo6.png");
+  background-position: -400px -200px, -100px -100px; /* Position logo at left (fixed x), logo6 at the top-right */
+  background-repeat: no-repeat;
+  background-attachment: auto; /* Keep the background images fixed on scroll */
+  background-size: auto, auto; /* Adjust if needed for scaling the images */
+  padding-top: 0;
+  min-height: 100vh;
+  position: relative; /* Allows for precise positioning */
+  top: 0; /* Stick it to the top of the page */
+  width: 100%; /* Full width to span the entire page */
+}
+
+.custombutton {
+  padding: 10px 20px;
+}
+
+.purpleColor{
+  --purple-900: oklch(0.13 0.06 280);
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
